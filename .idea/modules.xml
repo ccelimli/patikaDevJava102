@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listClass/listClass.iml" filepath="$PROJECT_DIR$/listClass/listClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nested/nested.iml" filepath="$PROJECT_DIR$/nested/nested.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patikaDevJava102.iml" filepath="$PROJECT_DIR$/patikaDevJava102.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unboxing/unboxing.iml" filepath="$PROJECT_DIR$/unboxing/unboxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/wrapper/wrapper.iml" />
+    </modules>
+  </component>
+</project>
