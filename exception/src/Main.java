@@ -13,6 +13,6 @@ public class Main {
         else {
             System.out.println(b / a);
         }
-        System.out.println("Program Bitti");
+        System.out.println("Program Bitti !!!");
     }
 }
