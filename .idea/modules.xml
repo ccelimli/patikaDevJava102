@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileClass/fileClass.iml" filepath="$PROJECT_DIR$/fileClass/fileClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileInputStream/fileInputStream.iml" filepath="$PROJECT_DIR$/fileInputStream/fileInputStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/fixtureLocator/fixtureLocator.iml" filepath="$PROJECT_DIR$/fixtureLocator/fixtureLocator.iml" />
       <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/listClass/listClass.iml" filepath="$PROJECT_DIR$/listClass/listClass.iml" />
