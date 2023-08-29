@@ -70,9 +70,9 @@ public class Brand {
         while (true){
             System.out.println("Ana menüye dönmek için tuşa bas: 'Y' ");
             String select= input.next();
-            select.toUpperCase();
+            select=select.toUpperCase();
             switch (select){
-                case "Y"->Store.start();
+                case "Y" ->Store.start();
                 default -> System.out.println("Yanlış Seçim");
             }
         }

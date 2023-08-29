@@ -17,6 +17,10 @@ public class Store {
                 case 1->new Computer().process();
                 case 2->new SmartPhone();
                 case 3->new Brand().location();
+                case 4->{
+                    System.out.println("\n\nGoodBye!");
+                    System.exit(0);
+                }
             }
         }
 
