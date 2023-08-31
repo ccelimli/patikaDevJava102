@@ -38,7 +38,9 @@ public class Computer extends Product {
             switch (select) {
                 case 1 -> this.add();
                 case 2 -> this.delete();
-                case 3 -> this.displayComputers();
+                case 3 -> {
+                    this.displayComputers();
+                }
                 case 4 -> this.getByBrand();
                 case 5 -> this.getById();
                 case 6 -> Store.start();
@@ -127,27 +129,33 @@ public class Computer extends Product {
     public void delete() {
         this.displayComputers();
 
-        System.out.println("Silmek istediğiniz ürün: ");
+        System.out.println("\n\nSilmek istediğiniz ürün: ");
         Integer selectId = input.nextInt();
-        Computer selectComputer = null;
-        for (Computer item : computers) {
-            if (item.getId() == selectId) {
-                selectComputer.setId(item.getId());
-                selectComputer.setBrandName(item.getBrandName());
-                selectComputer.setProductName(item.getProductName());
-                selectComputer.setRam(item.getRam());
-                selectComputer.setMemory(item.getMemory());
-                selectComputer.setScreenSize(item.getScreenSize());
-                selectComputer.setUnitPrice(item.getUnitPrice());
-                selectComputer.setDiscountRate(item.getDiscountRate());
-                selectComputer.setAmountStock(item.getAmountStock());
+        Iterator<Computer> computerIterator=this.computers.iterator();
+        while(computerIterator.hasNext()){
+            if (computerIterator.next().getId().equals(selectId)){
+                computerIterator.remove();
+                System.out.println("Silme İşlemi Başarılı.");
+                this.displayComputers();
+            }
+            else{
+                System.out.println("Silme İşleminde Bir Hata Oluştu!");
             }
         }
-        this.computers.remove(selectComputer);
-        this.displayComputers();
+
     }
 
     private void displayComputers() {
+        if (this.computers.isEmpty()) {
+            System.out.println("Liste Boş!\n\n");
+            System.out.println("Ana menüye dönmek için tuşa basın: 'Y'");
+            String letter = input.nextLine();
+            letter = letter.toUpperCase();
+            switch (letter) {
+                case "Y" -> Store.start();
+                default -> System.out.println("Yanlış Seçim!");
+            }
+        }
         for (Computer item : computers) {
             System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%.2f\t%d",
                     item.getId(), item.getBrandName(), item.getProductName(),
