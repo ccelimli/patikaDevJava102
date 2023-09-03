@@ -5,13 +5,13 @@ public class Product {
     private Integer ram;
     private Integer memory;
     private Float screenSize;
-    private Integer unitPrice;
+    private Float unitPrice;
     private Float discountRate;
     private Integer amountStock;
 
     public Product(){};
 
-    public Product(Integer id, Integer unitPrice, Float discountRate, Integer amountStock, String productName, String brandName, Integer memory, Float screenSize, Integer ram) {
+    public Product(Integer id, Float unitPrice, Float discountRate, Integer amountStock, String productName, String brandName, Integer memory, Float screenSize, Integer ram) {
         this.id = id;
         this.unitPrice = unitPrice;
         this.discountRate = discountRate;
@@ -31,11 +31,11 @@ public class Product {
         this.id = id;
     }
 
-    public Integer getUnitPrice() {
+    public Float getUnitPrice() {
         return unitPrice;
     }
 
-    public void setUnitPrice(Integer unitPrice) {
+    public void setUnitPrice(Float unitPrice) {
         this.unitPrice = unitPrice;
     }
 

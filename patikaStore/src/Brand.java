@@ -51,6 +51,11 @@ public class Brand {
         System.out.println("Seçim: ");
         Integer selectBrandId= input.nextInt();
 
+        for (Integer item : this.brands.keySet()) {
+            if (item.equals(selectBrandId))
+            System.out.println(item + " : " + this.brands.get(item));
+        }
+
         return this.brands.get(selectBrandId);
 
     }
