@@ -21,7 +21,7 @@ public class Computer extends Product {
 
     ;
 
-    public Computer(Integer id, Integer unitPrice, Float discountRate, Integer amountStock, String productName, String brandName, Integer memory, Float screenSize, Integer ram) {
+    public Computer(Integer id, Float unitPrice, Float discountRate, Integer amountStock, String productName, String brandName, Integer memory, Float screenSize, Integer ram) {
         super(id, unitPrice, discountRate, amountStock, productName, brandName, memory, screenSize, ram);
     }
 
@@ -54,7 +54,7 @@ public class Computer extends Product {
         Integer findId = input.nextInt();
         for (Computer item : computers) {
             if (Objects.equals(item.getId(), findId)) {
-                System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%.2f\t%d",
+                System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%.2f\t%.2f\t%d",
                         item.getId(), item.getBrandName(), item.getProductName(),
                         item.getRam(), item.getMemory(), item.getScreenSize(), item.getUnitPrice(),
                         item.getDiscountRate(), item.getAmountStock());
@@ -66,10 +66,10 @@ public class Computer extends Product {
 
     private void getByBrand() {
         System.out.println("Marka İsmi Giriniz: ");
-        String brandName = input.nextLine();
+        String brandName = input.next();
         for (Computer item : computers) {
             if (Objects.equals(item.getBrandName(), brandName)) {
-                System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%.2f\t%d",
+                System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%.2f\t%.2f\t%d",
                         item.getId(), item.getBrandName(), item.getProductName(),
                         item.getRam(), item.getMemory(), item.getScreenSize(), item.getUnitPrice(),
                         item.getDiscountRate(), item.getAmountStock());
@@ -84,8 +84,12 @@ public class Computer extends Product {
         Computer computer = new Computer();
         computer.setId(this.getComputerId());
 
+        System.out.println("Ürün Adı: ");
+        String productName = input.next();
+        computer.setProductName(productName);
+
         System.out.println("Ücret: ");
-        Integer unitPrice = input.nextInt();
+        Float unitPrice = input.nextFloat();
         computer.setUnitPrice(unitPrice);
 
 
@@ -97,9 +101,6 @@ public class Computer extends Product {
         Integer amountStock = input.nextInt();
         computer.setAmountStock(amountStock);
 
-        System.out.println("Ürün Adı: ");
-        String productName = input.nextLine();
-        computer.setProductName(productName);
 
         System.out.println("Marka Seç: ");
         computer.setBrandName(new Brand().selectBrand());
@@ -119,7 +120,7 @@ public class Computer extends Product {
         this.computers.add(computer);
         System.out.println("Eklenen Ürün: ");
         System.out.format("Id\tMarka\tÜrün Adı\tRam\tHafıza\tEkran Boyutu\tFiyat\tİndirim Oranı\tStok Adedi\n");
-        System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%.2f\t%d\n\n",
+        System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%.2f\t%.2f\t%d\n\n",
                 computer.getId(), computer.getBrandName(), computer.getProductName(),
                 computer.getRam(), computer.getMemory(), computer.getScreenSize(), computer.getUnitPrice(),
                 computer.getDiscountRate(), computer.getAmountStock());
@@ -142,22 +143,22 @@ public class Computer extends Product {
                 System.out.println("Silme İşleminde Bir Hata Oluştu!");
             }
         }
-
     }
 
     private void displayComputers() {
         if (this.computers.isEmpty()) {
             System.out.println("Liste Boş!\n\n");
             System.out.println("Ana menüye dönmek için tuşa basın: 'Y'");
-            String letter = input.nextLine();
+            String letter = input.next();
             letter = letter.toUpperCase();
-            switch (letter) {
-                case "Y" -> Store.start();
-                default -> System.out.println("Yanlış Seçim!");
+            if (letter.equals("Y")) {
+                Store.start();
+            } else {
+                System.out.println("Yanlış Seçim!");
             }
         }
         for (Computer item : computers) {
-            System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%.2f\t%d",
+            System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%.2f\t%.2f\t%d",
                     item.getId(), item.getBrandName(), item.getProductName(),
                     item.getRam(), item.getMemory(), item.getScreenSize(), item.getUnitPrice(),
                     item.getDiscountRate(), item.getAmountStock());

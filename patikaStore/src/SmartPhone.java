@@ -1,8 +1,5 @@
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
 
 public class SmartPhone extends Product{
     private int batteryPower;
@@ -38,7 +35,7 @@ public class SmartPhone extends Product{
     public SmartPhone(){
       super();
     }
-    public SmartPhone(Integer id, Integer unitPrice, Float discountRate, Integer amountStock, String productName, String brandName, Integer memory, Float screenSize, Integer ram, int batterryPower, String color) {
+    public SmartPhone(Integer id, Float unitPrice, Float discountRate, Integer amountStock, String productName, String brandName, Integer memory, Float screenSize, Integer ram, int batterryPower, String color) {
         super(id, unitPrice, discountRate, amountStock, productName, brandName, memory, screenSize, ram);
         this.batteryPower = batterryPower;
         this.color = color;
@@ -83,7 +80,7 @@ public class SmartPhone extends Product{
 
     private void getByBrand() {
         System.out.println("Marka İsmi Giriniz: ");
-        String brandName = input.nextLine();
+        String brandName = input.next();
         for (SmartPhone item : smartPhones) {
             if (Objects.equals(item.getBrandName(), brandName)) {
                 System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%s\t%.2f\t%.2f\t%d",
@@ -97,8 +94,19 @@ public class SmartPhone extends Product{
     }
 
     private void displaySmartPhones() {
+        if (this.smartPhones.isEmpty()) {
+            System.out.println("Liste Boş!\n\n");
+            System.out.println("Ana menüye dönmek için tuşa basın: 'Y'");
+            String letter = input.next();
+            letter = letter.toUpperCase();
+            if (letter.equals("Y")) {
+                Store.start();
+            } else {
+                System.out.println("Yanlış Seçim!");
+            }
+        }
         for (SmartPhone item : smartPhones) {
-            System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%s\t%.2f\t%.2f\t%d",
+            System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%s\t%.2f\t%.2f\t%d\n\n",
                     item.getId(), item.getBrandName(), item.getProductName(),
                     item.getRam(), item.getMemory(), item.getScreenSize(),item.getBatteryPower(),item.getColor(), item.getUnitPrice(),
                     item.getDiscountRate(), item.getAmountStock());
@@ -110,32 +118,25 @@ public class SmartPhone extends Product{
 
         System.out.println("Silmek istediğiniz ürün: ");
         Integer selectId = input.nextInt();
-        SmartPhone selectSmartPhone = null;
-        for (SmartPhone item : smartPhones) {
-            if (item.getId() == selectId) {
-                selectSmartPhone.setId(item.getId());
-                selectSmartPhone.setBrandName(item.getBrandName());
-                selectSmartPhone.setProductName(item.getProductName());
-                selectSmartPhone.setRam(item.getRam());
-                selectSmartPhone.setMemory(item.getMemory());
-                selectSmartPhone.setScreenSize(item.getScreenSize());
-                selectSmartPhone.setUnitPrice(item.getUnitPrice());
-                selectSmartPhone.setColor(item.getColor());
-                selectSmartPhone.setBatterryPower(item.getBatteryPower());
-                selectSmartPhone.setDiscountRate(item.getDiscountRate());
-                selectSmartPhone.setAmountStock(item.getAmountStock());
+        Iterator<SmartPhone> smartPhoneIterator= this.smartPhones.iterator();
+        while(smartPhoneIterator.hasNext()){
+            if (smartPhoneIterator.next().getId().equals(selectId)){
+                smartPhoneIterator.remove();
+                System.out.println("Silme İşlemi Başarılı.");
+                this.displaySmartPhones();
+            }
+            else {
+                System.out.println("Silme İşleminde Bir Hata Oluştu!");
             }
         }
-        this.smartPhones.remove(selectSmartPhone);
-        this.displaySmartPhones();
     }
 
     private void add() {
-        SmartPhone smartPhone = null;
+        SmartPhone smartPhone = new SmartPhone();
         smartPhone.setId(this.getSmartPhoneId());
 
         System.out.println("Ücret: ");
-        Integer unitPrice = input.nextInt();
+        Float unitPrice = input.nextFloat();
         smartPhone.setUnitPrice(unitPrice);
 
         System.out.println("İndirim Oranı: ");
@@ -147,7 +148,7 @@ public class SmartPhone extends Product{
         smartPhone.setAmountStock(amountStock);
 
         System.out.println("Ürün Adı: ");
-        String productName = input.nextLine();
+        String productName = input.next();
         smartPhone.setProductName(productName);
 
         System.out.println("Marka Seç: ");
@@ -175,7 +176,7 @@ public class SmartPhone extends Product{
 
         this.smartPhones.add(smartPhone);
         System.out.println("Eklenen Ürün: ");
-        System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%s\t%.2f\t%.2f\t%d",
+        System.out.format("%d\t%s\t%s\t%d\t%d\t%.2f\t%d\t%s\t%.2f\t%.2f\t%s\n\n",
                 smartPhone.getId(), smartPhone.getBrandName(), smartPhone.getProductName(),
                 smartPhone.getRam(), smartPhone.getMemory(), smartPhone.getScreenSize(),smartPhone.getBatteryPower(),smartPhone.getColor(), smartPhone.getUnitPrice(),
                 smartPhone.getDiscountRate(), smartPhone.getAmountStock());
