@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/fileClass/fileClass.iml" filepath="$PROJECT_DIR$/fileClass/fileClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileInputStream/fileInputStream.iml" filepath="$PROJECT_DIR$/fileInputStream/fileInputStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileOutputStream/fileOutputStream.iml" filepath="$PROJECT_DIR$/fileOutputStream/fileOutputStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileReader/fileReader.iml" filepath="$PROJECT_DIR$/fileReader/fileReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/fixtureLocator/fixtureLocator.iml" filepath="$PROJECT_DIR$/fixtureLocator/fixtureLocator.iml" />
       <module fileurl="file://$PROJECT_DIR$/generic/generic.iml" filepath="$PROJECT_DIR$/generic/generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/inputStreamReader/inputStreamReader.iml" filepath="$PROJECT_DIR$/inputStreamReader/inputStreamReader.iml" />
