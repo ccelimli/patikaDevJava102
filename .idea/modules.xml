@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/patikaDevJava102.iml" filepath="$PROJECT_DIR$/patikaDevJava102.iml" />
       <module fileurl="file://$PROJECT_DIR$/patikaStore/patikaStore.iml" filepath="$PROJECT_DIR$/patikaStore/patikaStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/printStream/printStream.iml" filepath="$PROJECT_DIR$/printStream/printStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/printWriter/printWriter.iml" filepath="$PROJECT_DIR$/printWriter/printWriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/unboxing/unboxing.iml" filepath="$PROJECT_DIR$/unboxing/unboxing.iml" />
       <module fileurl="file://$PROJECT_DIR$/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/wrapper/wrapper.iml" />
