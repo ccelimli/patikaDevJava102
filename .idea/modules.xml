@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/byteArrayInputStream/byteArrayInputStream.iml" filepath="$PROJECT_DIR$/byteArrayInputStream/byteArrayInputStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/collect/collect.iml" filepath="$PROJECT_DIR$/collect/collect.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/databaseTransactions/databaseTransactions.iml" filepath="$PROJECT_DIR$/databaseTransactions/databaseTransactions.iml" />
       <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileClass/fileClass.iml" filepath="$PROJECT_DIR$/fileClass/fileClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileInputStream/fileInputStream.iml" filepath="$PROJECT_DIR$/fileInputStream/fileInputStream.iml" />
