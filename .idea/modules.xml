@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/bufferedInputStream/bufferedInputStream.iml" filepath="$PROJECT_DIR$/bufferedInputStream/bufferedInputStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/bufferedReader/bufferedReader.iml" filepath="$PROJECT_DIR$/bufferedReader/bufferedReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/byteArrayInputStream/byteArrayInputStream.iml" filepath="$PROJECT_DIR$/byteArrayInputStream/byteArrayInputStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/casting/casting.iml" filepath="$PROJECT_DIR$/casting/casting.iml" />
       <module fileurl="file://$PROJECT_DIR$/collect/collect.iml" filepath="$PROJECT_DIR$/collect/collect.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/criticalSections/criticalSections.iml" filepath="$PROJECT_DIR$/criticalSections/criticalSections.iml" />
