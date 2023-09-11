@@ -29,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadSecond/threadSecond.iml" filepath="$PROJECT_DIR$/threadSecond/threadSecond.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadThird/threadThird.iml" filepath="$PROJECT_DIR$/threadThird/threadThird.iml" />
       <module fileurl="file://$PROJECT_DIR$/unboxing/unboxing.iml" filepath="$PROJECT_DIR$/unboxing/unboxing.iml" />
       <module fileurl="file://$PROJECT_DIR$/wrapper/wrapper.iml" filepath="$PROJECT_DIR$/wrapper/wrapper.iml" />
     </modules>
