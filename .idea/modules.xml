@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BookSorter/BookSorter.iml" filepath="$PROJECT_DIR$/BookSorter/BookSorter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadPooling/ThreadPooling.iml" filepath="$PROJECT_DIR$/ThreadPooling/ThreadPooling.iml" />
       <module fileurl="file://$PROJECT_DIR$/Transaction/Transaction.iml" filepath="$PROJECT_DIR$/Transaction/Transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/bufferedInputStream/bufferedInputStream.iml" filepath="$PROJECT_DIR$/bufferedInputStream/bufferedInputStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/bufferedReader/bufferedReader.iml" filepath="$PROJECT_DIR$/bufferedReader/bufferedReader.iml" />
@@ -29,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/printWriter/printWriter.iml" filepath="$PROJECT_DIR$/printWriter/printWriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadRace/threadRace.iml" filepath="$PROJECT_DIR$/threadRace/threadRace.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadSecond/threadSecond.iml" filepath="$PROJECT_DIR$/threadSecond/threadSecond.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadThird/threadThird.iml" filepath="$PROJECT_DIR$/threadThird/threadThird.iml" />
       <module fileurl="file://$PROJECT_DIR$/unboxing/unboxing.iml" filepath="$PROJECT_DIR$/unboxing/unboxing.iml" />
