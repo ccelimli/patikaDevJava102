@@ -31,6 +31,7 @@
       <module fileurl="file://$PROJECT_DIR$/printStream/printStream.iml" filepath="$PROJECT_DIR$/printStream/printStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/printWriter/printWriter.iml" filepath="$PROJECT_DIR$/printWriter/printWriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/serialization/serialization.iml" filepath="$PROJECT_DIR$/serialization/serialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamApi/streamApi.iml" filepath="$PROJECT_DIR$/streamApi/streamApi.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadRace/threadRace.iml" filepath="$PROJECT_DIR$/threadRace/threadRace.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadSecond/threadSecond.iml" filepath="$PROJECT_DIR$/threadSecond/threadSecond.iml" />
