@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/criticalSections/criticalSections.iml" filepath="$PROJECT_DIR$/criticalSections/criticalSections.iml" />
       <module fileurl="file://$PROJECT_DIR$/databaseTransactions/databaseTransactions.iml" filepath="$PROJECT_DIR$/databaseTransactions/databaseTransactions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enums/enums.iml" filepath="$PROJECT_DIR$/enums/enums.iml" />
       <module fileurl="file://$PROJECT_DIR$/exception/exception.iml" filepath="$PROJECT_DIR$/exception/exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileClass/fileClass.iml" filepath="$PROJECT_DIR$/fileClass/fileClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileInputStream/fileInputStream.iml" filepath="$PROJECT_DIR$/fileInputStream/fileInputStream.iml" />
